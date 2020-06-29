@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BELAJAR JAVASCRIPT</title>
+
+    <style>
+    #wrap {
+      background: yellow;
+      color: green;
+      font-size: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <img src="img1.jpg" alt="" height="400" width="300">
+    <div id="wrap"></div>
+
+    <script>
+      // //MENULISKAN FUNGSI
+      // function printText(){
+      //   var x = "SHINTA ROHMATIKA"
+      //   alert("Selamat datang!")
+      //   document.getElementById("wrap").innerHTML = x;
+      // }
+      // // memanggil FUNGSI
+      // printText();
+
+      //parameter pada FUNGSI
+      function printText(nama, nama2){
+        var text = nama + " ROHMATIKA" + nama2;
+        document.getElementById("wrap").innerHTML = text;
+      }
+
+      printText("SHINTA", " KOSMAGA");
+
+    </script>
+  </body>
+</html>

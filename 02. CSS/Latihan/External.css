@@ -1,0 +1,92 @@
+/* style head */
+h1, h2 {
+  color:skyblue;
+  font-family: arial, verdana, sans-serif;
+  font-size: 50px;
+  font-variant: small-caps;
+  text-decoration: underline;
+}
+h2 {
+    font-style: italic;
+}
+/* syntax bisa di persingkat dalam satu baris, tapi harus sesuai urutannya */
+/* style paragraf */
+p{
+  font-family: georgia, serif;
+  line-height: 50px;
+  text-align: left;
+  text-indent: 100px;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+/* id, tidak disarankan untuk css, 1 elemen tidak boleh lebih dari 1 id, 1 halaman html tidak boleh lebih dari 1 id */
+#p1{
+  color:coral
+}
+/* class, kalau elemen html ga bisa, boleh pake class. 1 elemen bisa lbh dari 1 class */
+.p2{
+  color:green;
+}
+/* style paragraf yang mempunyai class cetak tebal */
+p.cetak-tebal{
+  font-weight: bold;
+}
+/* style link */
+a{
+  text-decoration: none;
+}
+/* pseudo class link */
+.google:link{
+  color: red;
+}
+.google:hover{
+  color: green;
+  font-family: arial;
+  font-size: 20px;
+}
+.google:active{
+  font-style: italic;
+}
+.google:visited{
+  color: green;
+}
+/* background pada body */
+body{
+  font-family: arial;
+  background-color: white;
+  background-image: url(Gambar/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+/* syntax bisa dipersingkat dalam satu baris */
+
+/* style link di dalam ol dan ul */
+ul li a{
+  color: coral;
+}
+ol li a {
+  color: green;
+}
+
+/* pseudo class parent-class atau posisi element */
+ul li:first-child a {
+  font-size: 20px
+}
+ul li:last-child a{
+  font-style: italic;
+}
+ul li:nth-child(odd) a:hover {
+  color:silver;
+}
+ol li:nth-child(5) a{
+  font-weight: bold;
+}
+ol li:nth-child(2n) a{
+  font-style: italic;
+}
+
+/* pseudo class sesuai urutan element */
+p:first-of-type{
+  font-variant: small-caps;
+}

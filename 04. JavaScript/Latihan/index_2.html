@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BELAJAR JAVASCRIPT</title>
+
+    <style>
+    #wrap {
+      background: yellow;
+      color: green;
+      font-size: 50px;
+    }
+    </style>
+  </head>
+  <body>
+    <img src="img1.jpg" alt="" height="400" width="300">
+    <div id="wrap"></div>
+
+    <script>
+    //---metode string--
+    //length indexOf lastIndexof search charAt
+    var nama="Hilman Ramadhan";
+    var hasil=nama.length; // membalikan length string
+    var hasil2=nama.indexOf("n"); //membalikan angka dimana huruf itu berada, index dimulai dari 0, spasi termasuk. kalau ada 2 huruf, maka yg diberi yang paling awal
+    var hasil3=nama.lastIndexOf("n"); //yang dicari yang paling akhir
+    var hasil4=nama.search("Rama"); // sama kaya indexOf
+    var hasil5=nama.charAt(3); //membalikan huruf yang ada di posisi 3 (hitungan dari 0)
+
+    //toUpperCase() toLowerCase() replace
+    var hasil6=nama.toUpperCase();
+    var hasil7=nama.toLowerCase();
+    var hasil8=nama.replace("Rama","Shinta");
+      /*1. memilih id wrap
+      2. menggunakan metode innerHTML=nulis konten
+      */
+
+    //substring (start, end), substr(start, length)
+    var hasil9 = nama.substring(2,5); //hanya diambil angka dari 2-4
+    var hasil10 = nama.substr(2,5); // mulai dari angka 2, diambil 4 angka berikutnya
+
+    //parseInt parseFloat (ubah dari string ke angka)
+    var namaangka = 12234556;
+    var angka=parseInt(namaangka)+10;
+      document.getElementById("wrap").innerHTML = angka;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+/* background pada body */
+body{
+  background-image: url(../img/pattern.png);
+}
+/* background pada header */
+header {
+  overflow: hidden;
+  background-color: silver;
+  padding: 3px 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* style link pada header */
+header a{
+  float: right;
+  display:block;
+  list-style: none;
+  padding: 8px 8px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  border-radius: 4px;
+}
+/* style over */
+header a:hover{
+  background-color: rgb(1,6,73);
+  color: silver;
+}
+/* style img pada header */
+header img {
+  float: left;
+  margin-left: 20px;
+}
+
+section{
+  background-color: black;
+}
+footer{
+  background-color: black;
+}

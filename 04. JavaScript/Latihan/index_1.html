@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BELAJAR JAVASCRIPT</title>
+
+    <style>
+      #wrap {
+        background: yellow;
+        color: green;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="img1.jpg" alt="" height="400" width="300">
+    <div id="wrap"></div>
+
+    <script>
+      /*1. memilih id wrap
+      2. menggunakan metode innerHTML=nulis konten
+      */
+
+      //Deklarasi Variabel
+      //--------
+      //Nama dimulai dengan huruf atau $ atau _
+      //Nama boleh mengandung huruf, angka, underscore _ dan $ dollar
+      //Nama itu case sensitive
+      //Ada 'reserved words' yang tidak boleh dipakai
+
+      //tipe data string
+      var text= "sekolah koding";
+      var text2= " yang baru"
+      //tipe data angka
+      var angka = 1000;
+      var angka2= 50.12234556;
+
+      // operasi matematika + - / * %
+      // kiri=nama -> kanan=nilai
+      // var angka_baru = angka + angka2;
+      // var angka_baru2 = text + text2;
+
+      // increment ++ decrement --
+
+      // penulisan singkat angka2=angka2+angka2
+      // angka2 +=angka;
+
+      //---metode number----
+      //toFixed(n) toString() random min (a,b,c) max(a,b,c)
+      var angka_baru = angka2.toFixed(2); //ambil 2 di belakang koma
+      var angka_baru2 = angka.toString();
+      var angka_baru3 = Math.random();
+      var angka_baru4 = Math.min(1,2,3);
+      var angka_baru5 = Math.max(angka,angka2,angka_baru);
+      //round() cell() floor() ObjectMethods (abs, log, dll)
+      var angka_baru6 = Math.round(angka2); //membulatkan ke angka terdekat
+      var angka_baru7 = Math.log(angka2);
+      //random specific formula
+      //random hanya dari 0 sampai 1
+      var x = 10; //range nilai random
+      var y = 1; //batas min nilai random
+      //batas max=x+y
+      var angka_baru8 = Math.floor(Math.random()*x)+y;
+
+      document.getElementById("wrap").innerHTML = angka_baru5;
+    </script>
+  </body>
+</html>
